@@ -49,7 +49,9 @@ func main() {
 	if text == "owo" {
 		fmt.Println("What's this?")
 	}
-
+	if text == "n" || text == "N" || text == "no" || text =="No" {
+		fmt.Println("Awwwh man.")
+	}
 	if text == "y" || text == "Y" {
 		// fmt.Println("Your text was: ", text)
 
@@ -64,10 +66,10 @@ func main() {
 		scanner.Scan()
 		greet = scanner.Text()
 
-		if greet == "hi" || greet == "hey" || greet == "hola" {
+		if greet == "hi" || greet == "hey" || greet == "hola" || greet == "Kon'nichiwa" || greet = "こんにちは" {
 			fmt.Println("Hey to you!")
 		} else {
-			if greet == "boo" || greet == "lame" {
+			if greet == "boo" || greet == "lame" || greet = "I hate you!" {
 				fmt.Println("Mean >:(")
 			} else {
 				fmt.Println("No greeting issued. Shall be ignored.")
@@ -76,9 +78,9 @@ func main() {
 		scanner.Scan()
 		about = scanner.Text()
 
-		if about == "/about" || about == "about" {
+		if about == "/about" || about == "about" || about == "who are you"{
 			fmt.Println("Thanks for asking ", name)
-			fmt.Println("I am a GitHub repository by infbyte.\n >> Currently in development. <<")
+			fmt.Println("I am a GitHub repository by Byte.\n >> Currently in development. <<")
 		}
 
 	} else {
