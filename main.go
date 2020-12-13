@@ -72,6 +72,9 @@ func main() {
 			if greet == "boo" || greet == "lame" || greet = "I hate you!" {
 				fmt.Println("Mean >:(")
 			} else {
+				if greet == "test" || greet == "ping" {
+					fmt.Println("PONG!")
+				} else {
 				fmt.Println("No greeting issued. Shall be ignored.")
 			}
 		}
