@@ -1,4 +1,4 @@
-/* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /* */ /*
+/* */ /* */ /* */ /* */ /* */ /* DreamingCoders */ /* */ /* */ /* */ /* */ /*
 [[=================================================================]]
 If you are editing this repository make sure to issue a pull request to further the development of this chatbot.
 Others would like to learn as well.
@@ -25,7 +25,7 @@ func main() {
 
 	redtype := color.New(color.FgRed, color.Bold)
 
-	color.Cyan("Hello there. My name is Clara. I am a chatbot.")
+	color.Cyan("Hello there. My name is Clora. I am a chatbot.")
 
 	scanner := bufio.NewScanner(os.Stdin)
 
@@ -46,10 +46,7 @@ func main() {
 	scanner.Scan()
 	text = scanner.Text()
 
-	if text == "owo" {
-		fmt.Println("What's this?")
-	}
-	if text == "n" || text == "N" || text == "no" || text =="No" {
+	if text == "n" || text == "N" || text == "no" || text == "No" {
 		fmt.Println("Awwwh man.")
 	}
 	if text == "y" || text == "Y" {
@@ -69,11 +66,11 @@ func main() {
 		if greet == "hi" || greet == "hey" || greet == "hola" || greet == "Kon'nichiwa" || greet = "こんにちは" {
 			fmt.Println("Hey to you!")
 		} else {
-			if greet == "boo" || greet == "lame" || greet = "I hate you!" {
-				fmt.Println("Mean >:(")
+			if greet == "boo" || greet == "lame" || greet == "I hate you!" {
+				fmt.Println("Sorry you feel that way, talk to you later!")
 			} else {
 				if greet == "test" || greet == "ping" {
-					fmt.Println("PONG!")
+					fmt.Println("Pong!")
 				} else {
 				fmt.Println("No greeting issued. Shall be ignored.")
 			}
@@ -83,9 +80,29 @@ func main() {
 
 		if about == "/about" || about == "about" || about == "who are you"{
 			fmt.Println("Thanks for asking ", name)
-			fmt.Println("I am a GitHub repository by Byte.\n >> Currently in development. <<")
+			fmt.Println("I am a GitHub repository by DreamingCoders.\n >> Currently in development. <<")
 		}
 
+			// Mental fixating
+		if text == "Please help me" {
+			scanner.Scan()
+			taskHelper = scanner.Text()
+			
+				// Targets the person's emotional state
+			if(taskHelper == "I don't feel well"){
+				fmt.Println("Are you feeling sick? Where do you feel sick.")
+			}else if(taskHelper == "I don't know what to do anymore"){
+				fmt.Println("There's plenty of things to do in life, look at me for example. I was designed to help amazing people like you!\
+					I am assuming you are on Bryckie is that correct?")
+					
+			}
+			
+			fmt.Println("What do you need help with?")
+		}
+			// Less mentally consuming functionalitie
+		if text == "owo" {
+			fmt.Println("What's this?")
+		}
 	} else {
 		fmt.Println("Don't want to talk? That's fine. See you soon!")
 	}
