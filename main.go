@@ -90,7 +90,7 @@ func main() {
 			
 				// Targets the person's emotional state
 			if(taskHelper == "I don't feel well"){
-				fmt.Println("Are you feeling sick? Where do you feel sick.")
+				fmt.Println("Are you feeling sick?")
 			}else if(taskHelper == "I don't know what to do anymore"){
 				fmt.Println("There's plenty of things to do in life, look at me for example. I was designed to help amazing people like you!\
 					I am assuming you are on Bryckie is that correct?")
@@ -100,8 +100,8 @@ func main() {
 			fmt.Println("What do you need help with?")
 		}
 			// Less mentally consuming functionalitie
-		if text == "owo" {
-			fmt.Println("What's this?")
+		if text == "I'm bored" {
+			fmt.Println("Allow me to help!")
 		}
 	} else {
 		fmt.Println("Don't want to talk? That's fine. See you soon!")
